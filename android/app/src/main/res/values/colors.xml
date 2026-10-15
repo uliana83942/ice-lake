@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ice_background">#F2FAFF</color>
+    <color name="ice_background_mid">#E2F2FB</color>
+    <color name="ice_background_deep">#CFE8F5</color>
+    <color name="ice_surface">#FFFFFF</color>
+    <color name="ice_surface_tint">#EAF6FC</color>
+    <color name="ice_stroke">#D6EAF5</color>
+    <color name="ice_secondary">#A8DADC</color>
+    <color name="ice_primary">#2878B5</color>
+    <color name="ice_primary_light">#3E96D2</color>
+    <color name="ice_primary_dark">#1B4C74</color>
+    <color name="ice_deep">#0E2A3F</color>
+    <color name="ice_deep_mid">#16486E</color>
+    <color name="ice_accent">#F4A261</color>
+    <color name="ice_accent_soft">#FDF0E4</color>
+    <color name="ice_text">#203040</color>
+    <color name="ice_text_muted">#5E7689</color>
+    <color name="ice_text_faint">#8FA7B6</color>
+    <color name="ice_on_dark">#FFFFFF</color>
+    <color name="ice_on_dark_muted">#D8EEFB</color>
+    <color name="ice_on_dark_faint">#8FC9E8</color>
+    <color name="ice_track_dark">#1B4C74</color>
+    <color name="ice_mark_fill">#113A5C</color>
+    <color name="ice_disabled">#B7D3E4</color>
+    <color name="scrim_splash">#590E2A3F</color>
+    <color name="scrim_result">#400E2A3F</color>
+    <color name="ripple_light">#3DFFFFFF</color>
+    <color name="ripple_accent">#4DF4A261</color>
+    <color name="ripple_primary">#332878B5</color>
+    <color name="blob_ice">#4DA8DADC</color>
+    <color name="snow_dot">#4DFFFFFF</color>
+    <color name="snow_dot_soft">#2EFFFFFF</color>
+    <color name="card_translucent">#EBFFFFFF</color>
+    <color name="card_result">#F5FFFFFF</color>
+    <color name="white_stroke">#59FFFFFF</color>
+</resources>

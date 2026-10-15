@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/trip_card"
+    style="@style/Widget.App.Card.Soft"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/trip_card_height"
+    android:layout_marginBottom="@dimen/space_m"
+    app:cardCornerRadius="@dimen/radius_m">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_m"
+        android:paddingEnd="@dimen/space_m">
+
+        <FrameLayout
+            android:layout_width="@dimen/trip_sprite_well"
+            android:layout_height="@dimen/trip_sprite_well"
+            android:background="@drawable/shape_sprite_well">
+
+            <ImageView
+                android:id="@+id/img_trip_species"
+                android:layout_width="@dimen/trip_sprite_size"
+                android:layout_height="@dimen/trip_sprite_size"
+                android:layout_gravity="center"
+                android:contentDescription="@string/spot_art_desc"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sprite_fish_pike" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_m"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_trip_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/value_none"
+                android:textAppearance="@style/TextAppearance.IceLake.Body"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_trip_meta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/value_none"
+                android:textAppearance="@style/TextAppearance.IceLake.Meta" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_trip_chevron"
+            android:layout_width="@dimen/chevron_size"
+            android:layout_height="@dimen/chevron_size"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_chevron" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

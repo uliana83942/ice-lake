@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient">
+
+    <ImageView
+        android:id="@+id/img_splash_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.55"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/splash_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/scrim_splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/dot_1"
+        android:layout_width="@dimen/snow_dot_large"
+        android:layout_height="@dimen/snow_dot_large"
+        android:background="@drawable/shape_snow_dot"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <View
+        android:id="@+id/dot_2"
+        android:layout_width="@dimen/snow_dot_small"
+        android:layout_height="@dimen/snow_dot_small"
+        android:background="@drawable/shape_snow_dot_soft"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <View
+        android:id="@+id/dot_3"
+        android:layout_width="@dimen/snow_dot_small"
+        android:layout_height="@dimen/snow_dot_small"
+        android:background="@drawable/shape_snow_dot"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <View
+        android:id="@+id/dot_4"
+        android:layout_width="@dimen/snow_dot_large"
+        android:layout_height="@dimen/snow_dot_large"
+        android:background="@drawable/shape_snow_dot_soft"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <View
+        android:id="@+id/dot_5"
+        android:layout_width="@dimen/snow_dot_small"
+        android:layout_height="@dimen/snow_dot_small"
+        android:background="@drawable/shape_snow_dot"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <View
+        android:id="@+id/dot_6"
+        android:layout_width="@dimen/snow_dot_large"
+        android:layout_height="@dimen/snow_dot_large"
+        android:background="@drawable/shape_snow_dot_soft"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <View
+        android:id="@+id/dot_7"
+        android:layout_width="@dimen/snow_dot_small"
+        android:layout_height="@dimen/snow_dot_small"
+        android:background="@drawable/shape_snow_dot"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <View
+        android:id="@+id/dot_8"
+        android:layout_width="@dimen/snow_dot_large"
+        android:layout_height="@dimen/snow_dot_large"
+        android:background="@drawable/shape_snow_dot_soft"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <View
+        android:id="@+id/splash_ring"
+        android:layout_width="@dimen/splash_ring_size"
+        android:layout_height="@dimen/splash_ring_size"
+        android:background="@drawable/shape_splash_ring"
+        app:layout_constraintBottom_toBottomOf="@id/splash_mark"
+        app:layout_constraintEnd_toEndOf="@id/splash_mark"
+        app:layout_constraintStart_toStartOf="@id/splash_mark"
+        app:layout_constraintTop_toTopOf="@id/splash_mark" />
+
+    <FrameLayout
+        android:id="@+id/splash_mark"
+        android:layout_width="@dimen/splash_mark_size"
+        android:layout_height="@dimen/splash_mark_size"
+        android:background="@drawable/shape_splash_mark"
+        app:layout_constraintBottom_toTopOf="@id/txt_splash_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:id="@+id/img_splash_mark"
+            android:layout_width="@dimen/splash_sprite_size"
+            android:layout_height="@dimen/splash_sprite_size"
+            android:layout_gravity="center"
+            android:contentDescription="@string/splash_mark_desc"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_ice_hole" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_splash_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xxl"
+        android:text="@string/splash_title"
+        android:textAppearance="@style/TextAppearance.IceLake.Display"
+        app:layout_constraintBottom_toTopOf="@id/txt_splash_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_mark" />
+
+    <TextView
+        android:id="@+id/txt_splash_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_s"
+        android:letterSpacing="0.32"
+        android:text="@string/splash_subtitle"
+        android:textColor="@color/ice_secondary"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBottom_toTopOf="@id/progress_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_splash_title" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_splash"
+        android:layout_width="@dimen/splash_progress_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xxl"
+        android:accessibilityLiveRegion="polite"
+        android:contentDescription="@string/splash_progress_desc"
+        android:indeterminate="true"
+        app:indicatorColor="@color/ice_accent"
+        app:trackColor="@color/ice_track_dark"
+        app:trackCornerRadius="2dp"
+        app:trackThickness="4dp"
+        app:layout_constraintBottom_toTopOf="@id/txt_splash_tagline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_splash_subtitle" />
+
+    <TextView
+        android:id="@+id/txt_splash_tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_l"
+        android:letterSpacing="0.2"
+        android:text="@string/splash_tagline"
+        android:textColor="@color/ice_on_dark_faint"
+        android:textSize="@dimen/text_meta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_splash" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

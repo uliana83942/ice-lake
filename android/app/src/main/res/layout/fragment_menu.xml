@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu_gradient">
+
+    <ImageView
+        android:id="@+id/img_menu_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.38"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/menu_blob"
+        android:layout_width="@dimen/blob_size"
+        android:layout_height="@dimen/blob_size"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="-60dp"
+        android:background="@drawable/shape_blob_ice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/menu_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/screen_margin"
+        android:paddingTop="@dimen/status_bar_pad"
+        android:paddingEnd="@dimen/space_m"
+        android:paddingBottom="@dimen/space_m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_menu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_title"
+                android:textAppearance="@style/TextAppearance.IceLake.Headline" />
+
+            <TextView
+                android:id="@+id/txt_menu_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:letterSpacing="0.18"
+                android:text="@string/menu_subtitle"
+                android:textColor="@color/ice_text_muted"
+                android:textSize="@dimen/text_meta" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_settings"
+            style="@style/Widget.App.Button.Icon"
+            android:layout_width="@dimen/touch_target"
+            android:layout_height="@dimen/touch_target"
+            android:contentDescription="@string/menu_settings_desc"
+            app:icon="@drawable/ic_settings" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/menu_hairline"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hairline"
+        android:background="@drawable/shape_hairline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_header" />
+
+    <com.icelake.fishinglog.core.ui.SectionHeaderView
+        android:id="@+id/section_recent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/space_l"
+        android:layout_marginEnd="@dimen/screen_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_hairline" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_trips"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/space_m"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/space_s"
+        app:layout_constraintBottom_toTopOf="@id/txt_cta_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/section_recent" />
+
+    <LinearLayout
+        android:id="@+id/menu_empty_state"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/list_trips"
+        app:layout_constraintEnd_toEndOf="@id/list_trips"
+        app:layout_constraintStart_toStartOf="@id/list_trips"
+        app:layout_constraintTop_toTopOf="@id/list_trips">
+
+        <ImageView
+            android:id="@+id/img_menu_empty"
+            android:layout_width="@dimen/empty_sprite_size"
+            android:layout_height="@dimen/empty_sprite_size"
+            android:contentDescription="@string/menu_empty_art_desc"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_tent" />
+
+        <TextView
+            android:id="@+id/txt_menu_empty_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_m"
+            android:text="@string/menu_empty_title"
+            android:textAppearance="@style/TextAppearance.IceLake.Title" />
+
+        <TextView
+            android:id="@+id/txt_menu_empty_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:text="@string/menu_empty_body"
+            android:textAppearance="@style/TextAppearance.IceLake.Meta" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_cta_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_s"
+        android:letterSpacing="0.18"
+        android:text="@string/menu_cta_hint"
+        android:textAppearance="@style/TextAppearance.IceLake.Label"
+        app:layout_constraintBottom_toTopOf="@id/menu_bento_row"
+        app:layout_constraintStart_toStartOf="@id/menu_bento_row" />
+
+    <LinearLayout
+        android:id="@+id/menu_bento_row"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bento_row_height"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/space_m"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/btn_spot_library"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_start_trip"
+            style="@style/Widget.App.Button.Primary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:paddingTop="@dimen/space_l"
+            android:paddingBottom="@dimen/space_l"
+            android:text="@string/menu_cta"
+            app:cornerRadius="@dimen/radius_l"
+            app:icon="@drawable/sprite_ice_hole"
+            app:iconGravity="top"
+            app:iconPadding="@dimen/space_s"
+            app:iconSize="@dimen/cta_sprite_size"
+            app:iconTint="@null" />
+
+        <LinearLayout
+            android:id="@+id/menu_stat_column"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/space_m"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.icelake.fishinglog.core.ui.StatCardView
+                android:id="@+id/stat_catches"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.icelake.fishinglog.core.ui.StatCardView
+                android:id="@+id/stat_best"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/space_m"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_menu_empty_stat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/space_m"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/menu_empty_stat"
+            android:textAppearance="@style/TextAppearance.IceLake.Label"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_spot_library"
+        style="@style/Widget.App.Button.Secondary"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_secondary_height"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/space_l"
+        android:text="@string/menu_secondary"
+        app:icon="@drawable/ic_pin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

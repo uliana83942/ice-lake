@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.IceLake" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/ice_primary</item>
+        <item name="colorOnPrimary">@color/ice_on_dark</item>
+        <item name="colorPrimaryContainer">@color/ice_surface_tint</item>
+        <item name="colorOnPrimaryContainer">@color/ice_primary_dark</item>
+        <item name="colorSecondary">@color/ice_secondary</item>
+        <item name="colorOnSecondary">@color/ice_text</item>
+        <item name="colorTertiary">@color/ice_accent</item>
+        <item name="colorOnTertiary">@color/ice_text</item>
+        <item name="android:colorBackground">@color/ice_background</item>
+        <item name="colorSurface">@color/ice_surface</item>
+        <item name="colorOnSurface">@color/ice_text</item>
+        <item name="colorSurfaceVariant">@color/ice_surface_tint</item>
+        <item name="colorOnSurfaceVariant">@color/ice_text_muted</item>
+        <item name="colorOutline">@color/ice_stroke</item>
+        <item name="colorError">@color/ice_accent</item>
+        <item name="android:windowBackground">@drawable/window_splash</item>
+        <item name="android:statusBarColor">@color/ice_deep</item>
+        <item name="android:navigationBarColor">@color/ice_deep</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.IceLake.Dialog</item>
+    </style>
+
+    <style name="ThemeOverlay.IceLake.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/ice_surface</item>
+        <item name="colorOnSurface">@color/ice_text</item>
+    </style>
+
+    <style name="Theme.IceLake.Dialog" parent="Theme.Material3.Light.Dialog">
+        <item name="colorPrimary">@color/ice_primary</item>
+        <item name="colorOnPrimary">@color/ice_on_dark</item>
+        <item name="colorSurface">@color/ice_surface</item>
+        <item name="colorOnSurface">@color/ice_text</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">92%</item>
+        <item name="android:windowMinWidthMinor">92%</item>
+    </style>
+</resources>

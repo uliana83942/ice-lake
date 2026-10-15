@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ice Lake</string>
+
+    <string name="splash_title">ICE LAKE</string>
+    <string name="splash_subtitle">FISHING LOG</string>
+    <string name="splash_tagline">OFFLINE CATCH JOURNAL</string>
+    <string name="splash_progress_desc">Loading your journal</string>
+    <string name="splash_mark_desc">Ice hole with a jig line</string>
+
+    <string name="menu_title">ICE LAKE</string>
+    <string name="menu_subtitle">TRIP JOURNAL · 2026 SEASON</string>
+    <string name="menu_cta_hint">TAP TO LOG A CATCH</string>
+    <string name="menu_cta">START NEW TRIP</string>
+    <string name="menu_secondary">SPOT LIBRARY</string>
+    <string name="menu_recent_header">RECENT TRIPS</string>
+    <string name="menu_empty_title">YOUR JOURNAL IS EMPTY</string>
+    <string name="menu_empty_body">Log your first catch to fill the season</string>
+    <string name="menu_empty_stat">NO CATCHES YET · YOUR FIRST TRIP AWAITS</string>
+    <string name="menu_settings_desc">Open settings</string>
+    <string name="menu_empty_art_desc">Ice fishing shelter on an empty lake</string>
+
+    <string name="stat_catches">CATCHES</string>
+    <string name="stat_best">BEST</string>
+    <string name="stat_trips">TRIPS</string>
+    <string name="stat_length">LENGTH</string>
+    <string name="stat_bait">BAIT</string>
+    <string name="stat_weather">WEATHER</string>
+    <string name="stat_spot">SPOT</string>
+    <string name="stat_ice">ICE</string>
+
+    <string name="game_title">NEW CATCH</string>
+    <string name="game_back_desc">Back to journal</string>
+    <string name="game_species_header">SPECIES</string>
+    <string name="game_conditions_header">CONDITIONS</string>
+    <string name="game_notes_header">NOTES</string>
+    <string name="game_weight_label">WEIGHT</string>
+    <string name="game_length_label">LENGTH</string>
+    <string name="game_weight_desc">Catch weight in kilograms</string>
+    <string name="game_length_desc">Catch length in centimetres</string>
+    <string name="game_bait_label">BAIT</string>
+    <string name="game_weather_label">WEATHER</string>
+    <string name="game_notes_hint">Notes — hole depth, bite window, tackle</string>
+    <string name="game_save">SAVE CATCH</string>
+    <string name="game_warning">Pick a species to save this catch</string>
+    <string name="game_logged_count">%1$d LOGGED</string>
+    <string name="game_preview_desc">Selected species preview</string>
+    <string name="game_strip_format">SPOT %1$s · ICE %2$s · %3$s · %4$s</string>
+    <string name="game_strip_desc">Current spot and ice conditions, tap to change the spot</string>
+    <string name="game_disabled_desc">Disabled — pick a species first</string>
+    <string name="game_enabled_desc">Ready to save</string>
+
+    <string name="result_title">CATCH DETAILS</string>
+    <string name="result_personal_best">PERSONAL BEST</string>
+    <string name="result_again">LOG AGAIN</string>
+    <string name="result_menu">MENU</string>
+    <string name="result_notes_header">NOTES</string>
+    <string name="result_hero_desc">%1$s, %2$s, %3$s, caught at %4$s</string>
+    <string name="result_saved_label">SAVED TO JOURNAL</string>
+
+    <string name="spot_library_title">SPOT LIBRARY</string>
+    <string name="spot_library_close_desc">Close spot library</string>
+    <string name="spot_library_use">USE THIS SPOT</string>
+    <string name="spot_favourite">★ FAVOURITE</string>
+    <string name="spot_meta_format">ICE %1$s · %2$d catches · last %3$s</string>
+    <string name="spot_art_desc">Fishing spot marker</string>
+
+    <string name="settings_title">SETTINGS</string>
+    <string name="settings_close_desc">Close settings</string>
+    <string name="settings_sound">SOUND FEEDBACK</string>
+    <string name="settings_haptic">HAPTIC FEEDBACK</string>
+    <string name="settings_units_metric">UNITS — METRIC</string>
+    <string name="settings_units_imperial">UNITS — IMPERIAL</string>
+    <string name="settings_temperature">SHOW TEMPERATURE</string>
+    <string name="settings_reset">RESET JOURNAL</string>
+    <string name="settings_state_on">On</string>
+    <string name="settings_state_off">Off</string>
+
+    <string name="reset_title">RESET JOURNAL</string>
+    <string name="reset_body">This clears every trip on this device</string>
+    <string name="reset_cancel">CANCEL</string>
+    <string name="reset_confirm">RESET</string>
+
+    <string name="chip_selected">Selected</string>
+    <string name="chip_not_selected">Not selected</string>
+
+    <string name="trip_card_desc">%1$s, %2$d catches</string>
+    <string name="trip_chevron_desc">Open trip details</string>
+    <string name="trip_meta_format">%1$s · %2$s · %3$d catches</string>
+
+    <string name="format_weight_metric">%1$s kg</string>
+    <string name="format_weight_imperial">%1$s lb</string>
+    <string name="format_length_metric">%1$d cm</string>
+    <string name="format_length_imperial">%1$d in</string>
+    <string name="format_ice_metric">%1$d cm</string>
+    <string name="format_ice_imperial">%1$d in</string>
+    <string name="format_temperature">%1$d°C</string>
+    <string name="format_temperature_hidden">ICE LAKE</string>
+    <string name="value_none">—</string>
+
+    <string name="species_pike">PIKE</string>
+    <string name="species_perch">PERCH</string>
+    <string name="species_zander">ZANDER</string>
+    <string name="species_trout">TROUT</string>
+    <string name="species_burbot">BURBOT</string>
+
+    <string name="bait_jig">JIG</string>
+    <string name="bait_spoon">SPOON</string>
+    <string name="bait_mormyshka">MORMYSHKA</string>
+    <string name="bait_live">LIVE BAIT</string>
+    <string name="bait_balance">BALANCE</string>
+
+    <string name="weather_clear">CLEAR</string>
+    <string name="weather_snow">SNOW</string>
+    <string name="weather_wind">WIND</string>
+    <string name="weather_overcast">OVERCAST</string>
+    <string name="weather_blizzard">BLIZZARD</string>
+</resources>

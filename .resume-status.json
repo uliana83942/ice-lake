@@ -1,0 +1,8 @@
+{
+  "outcome": "succeeded",
+  "fix_type": "transient",
+  "resume_from": "codegen",
+  "message": "Restart from Step 0 finished.",
+  "log": "projects/IceLake/.resume-20261014-173315.log",
+  "attempted_at_epoch": 1792003066
+}

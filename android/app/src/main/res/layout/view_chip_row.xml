@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt_chip_row_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/game_bait_label"
+        android:textAppearance="@style/TextAppearance.IceLake.Label" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_s"
+        app:chipSpacingHorizontal="@dimen/space_s"
+        app:chipSpacingVertical="@dimen/space_s"
+        app:singleLine="false"
+        app:selectionRequired="true"
+        app:singleSelection="true" />
+
+</merge>

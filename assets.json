@@ -1,0 +1,15 @@
+{
+  "assets": [
+    {"name":"icon_1024","type":"icon","prompt":"App icon, glossy 3D ice-blue fishing jig lure with a tiny orange bead, single centered object, deep blue radial gradient background, crisp, no text"},
+    {"name":"bg_splash","type":"bg","prompt":"Vertical 9:16 mobile background, frozen lake at blue hour, deep navy ice surface with faint snow drift, cinematic, dark, no text, no UI"},
+    {"name":"bg_menu","type":"bg","prompt":"Vertical 9:16 mobile background, bright frosty lake morning, pale icy blue snow field, soft light, airy, no text, no UI"},
+    {"name":"bg_game","type":"bg","prompt":"Vertical 9:16 mobile background, soft blurred white-blue ice texture, very low contrast for UI overlay, no text, no UI"},
+    {"name":"sprite_fish_pike","type":"sprite","prompt":"One single cartoon northern pike fish, centered icon, glossy 3D render, isolated on plain white, no other objects"},
+    {"name":"sprite_fish_perch","type":"sprite","prompt":"One single cartoon perch fish with orange fins, centered icon, glossy 3D render, isolated on plain white, no other objects"},
+    {"name":"sprite_fish_zander","type":"sprite","prompt":"One single cartoon zander fish, centered icon, glossy 3D render, isolated on plain white, no other objects"},
+    {"name":"sprite_fish_trout","type":"sprite","prompt":"One single cartoon trout fish, centered icon, glossy 3D render, isolated on plain white, no other objects"},
+    {"name":"sprite_fish_burbot","type":"sprite","prompt":"One single cartoon burbot fish, centered icon, glossy 3D render, isolated on plain white, no other objects"},
+    {"name":"sprite_ice_hole","type":"sprite","prompt":"One single round ice fishing hole in white ice with dark blue water, top-down centered icon, glossy 3D render, isolated on plain white, no other objects"},
+    {"name":"sprite_tent","type":"sprite","prompt":"One single blue ice fishing shelter tent, centered icon, glossy 3D render, isolated on plain white, no other objects"}
+  ]
+}

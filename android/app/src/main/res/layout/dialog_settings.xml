@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_surface"
+    android:elevation="@dimen/elevation_dialog"
+    android:paddingStart="@dimen/space_xl"
+    android:paddingTop="@dimen/space_xl"
+    android:paddingEnd="@dimen/space_xl"
+    android:paddingBottom="@dimen/space_xl">
+
+    <TextView
+        android:id="@+id/txt_settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/settings_title"
+        android:textAppearance="@style/TextAppearance.IceLake.Title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_settings_close"
+        style="@style/Widget.App.Button.Icon"
+        android:layout_width="@dimen/touch_target"
+        android:layout_height="@dimen/touch_target"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/settings_close_desc"
+        app:icon="@drawable/ic_close" />
+
+    <View
+        android:id="@+id/settings_rule"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hairline"
+        android:layout_below="@id/btn_settings_close"
+        android:layout_marginTop="@dimen/space_s"
+        android:background="@drawable/shape_hairline" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_settings_reset"
+        style="@style/Widget.App.Button.Danger"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_secondary_height"
+        android:layout_alignParentBottom="true"
+        android:text="@string/settings_reset"
+        app:icon="@drawable/ic_close" />
+
+    <LinearLayout
+        android:id="@+id/settings_rows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_settings_reset"
+        android:layout_below="@id/settings_rule"
+        android:layout_marginTop="@dimen/space_s"
+        android:layout_marginBottom="@dimen/space_m"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_settings_sound"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/settings_sound"
+                android:textAppearance="@style/TextAppearance.IceLake.Body"
+                android:textSize="@dimen/text_small" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switch_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_target"
+                android:contentDescription="@string/settings_sound" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_settings_haptic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/settings_haptic"
+                android:textAppearance="@style/TextAppearance.IceLake.Body"
+                android:textSize="@dimen/text_small" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switch_haptic"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_target"
+                android:contentDescription="@string/settings_haptic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_settings_units"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/settings_units_metric"
+                android:textAppearance="@style/TextAppearance.IceLake.Body"
+                android:textSize="@dimen/text_small" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switch_units"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_target"
+                android:contentDescription="@string/settings_units_metric" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_settings_temperature"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/settings_temperature"
+                android:textAppearance="@style/TextAppearance.IceLake.Body"
+                android:textSize="@dimen/text_small" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switch_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_target"
+                android:contentDescription="@string/settings_temperature" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

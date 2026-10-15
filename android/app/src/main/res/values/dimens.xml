@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_s">8dp</dimen>
+    <dimen name="space_m">12dp</dimen>
+    <dimen name="space_l">16dp</dimen>
+    <dimen name="space_xl">20dp</dimen>
+    <dimen name="space_xxl">28dp</dimen>
+
+    <dimen name="screen_margin">20dp</dimen>
+    <dimen name="status_bar_pad">44dp</dimen>
+    <dimen name="header_height">72dp</dimen>
+    <dimen name="hairline">1dp</dimen>
+
+    <dimen name="touch_target">48dp</dimen>
+    <dimen name="button_primary_height">60dp</dimen>
+    <dimen name="button_secondary_height">48dp</dimen>
+    <dimen name="button_result_height">56dp</dimen>
+    <dimen name="action_band_bottom">96dp</dimen>
+
+    <dimen name="radius_s">12dp</dimen>
+    <dimen name="radius_m">18dp</dimen>
+    <dimen name="radius_l">24dp</dimen>
+    <dimen name="radius_xl">28dp</dimen>
+
+    <dimen name="elevation_s">2dp</dimen>
+    <dimen name="elevation_m">3dp</dimen>
+    <dimen name="elevation_l">6dp</dimen>
+    <dimen name="elevation_dialog">10dp</dimen>
+
+    <dimen name="splash_mark_size">148dp</dimen>
+    <dimen name="splash_sprite_size">96dp</dimen>
+    <dimen name="splash_ring_size">176dp</dimen>
+    <dimen name="splash_progress_width">184dp</dimen>
+    <dimen name="snow_dot_small">4dp</dimen>
+    <dimen name="snow_dot_large">6dp</dimen>
+
+    <dimen name="bento_row_height">172dp</dimen>
+    <dimen name="stat_card_height">80dp</dimen>
+    <dimen name="cta_sprite_size">40dp</dimen>
+    <dimen name="blob_size">260dp</dimen>
+
+    <dimen name="trip_card_height">84dp</dimen>
+    <dimen name="trip_sprite_well">56dp</dimen>
+    <dimen name="trip_sprite_size">44dp</dimen>
+    <dimen name="chevron_size">20dp</dimen>
+
+    <dimen name="species_chip_size">72dp</dimen>
+    <dimen name="species_sprite_size">44dp</dimen>
+    <dimen name="preview_card_height">132dp</dimen>
+    <dimen name="preview_sprite_size">84dp</dimen>
+    <dimen name="chip_height">40dp</dimen>
+    <dimen name="chip_radius">20dp</dimen>
+    <dimen name="strip_height">56dp</dimen>
+
+    <dimen name="hero_card_height">164dp</dimen>
+    <dimen name="hero_sprite_size">96dp</dimen>
+    <dimen name="empty_sprite_size">96dp</dimen>
+    <dimen name="spot_card_height">72dp</dimen>
+    <dimen name="spot_sprite_size">36dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_small">20dp</dimen>
+    <dimen name="save_progress_size">20dp</dimen>
+
+    <dimen name="text_display">36sp</dimen>
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_title">18sp</dimen>
+    <dimen name="text_numeric_large">34sp</dimen>
+    <dimen name="text_numeric">28sp</dimen>
+    <dimen name="text_numeric_small">20sp</dimen>
+    <dimen name="text_body">15sp</dimen>
+    <dimen name="text_small">13sp</dimen>
+    <dimen name="text_meta">11sp</dimen>
+    <dimen name="text_label">10sp</dimen>
+    <dimen name="text_chip">12sp</dimen>
+</resources>

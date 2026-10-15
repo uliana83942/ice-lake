@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.IceLake.Display" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:textSize">@dimen/text_display</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.14</item>
+        <item name="android:textColor">@color/ice_on_dark</item>
+        <item name="android:shadowColor">@color/ice_deep</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">8</item>
+    </style>
+
+    <style name="TextAppearance.IceLake.Headline" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textColor">@color/ice_text</item>
+    </style>
+
+    <style name="TextAppearance.IceLake.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ice_text</item>
+    </style>
+
+    <style name="TextAppearance.IceLake.Numeric" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">@dimen/text_numeric</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+        <item name="android:textColor">@color/ice_primary</item>
+    </style>
+
+    <style name="TextAppearance.IceLake.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/ice_text</item>
+    </style>
+
+    <style name="TextAppearance.IceLake.Meta" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">@dimen/text_meta</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/ice_text_muted</item>
+    </style>
+
+    <style name="TextAppearance.IceLake.Label" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.18</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/ice_text_faint</item>
+    </style>
+
+    <style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/button_primary_height</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/ice_on_dark</item>
+        <item name="backgroundTint">@color/selector_button_primary</item>
+        <item name="cornerRadius">@dimen/radius_m</item>
+        <item name="elevation">@dimen/elevation_l</item>
+        <item name="rippleColor">@color/ripple_accent</item>
+        <item name="iconTint">@color/ice_on_dark</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/space_s</item>
+    </style>
+
+    <style name="Widget.App.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_secondary_height</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/ice_primary</item>
+        <item name="strokeColor">@color/ice_secondary</item>
+        <item name="strokeWidth">@dimen/hairline</item>
+        <item name="cornerRadius">@dimen/radius_m</item>
+        <item name="rippleColor">@color/ripple_primary</item>
+        <item name="iconTint">@color/ice_primary</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/space_s</item>
+        <item name="backgroundTint">@color/card_translucent</item>
+    </style>
+
+    <style name="Widget.App.Button.Danger" parent="Widget.App.Button.Secondary">
+        <item name="android:textColor">@color/ice_accent</item>
+        <item name="strokeColor">@color/ice_accent</item>
+        <item name="iconTint">@color/ice_accent</item>
+        <item name="rippleColor">@color/ripple_accent</item>
+    </style>
+
+    <style name="Widget.App.Button.Icon" parent="Widget.Material3.Button.IconButton">
+        <item name="android:minWidth">@dimen/touch_target</item>
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconTint">@color/ice_primary</item>
+        <item name="rippleColor">@color/ripple_primary</item>
+    </style>
+
+    <style name="Widget.App.Card.Soft" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/radius_m</item>
+        <item name="cardElevation">@dimen/elevation_s</item>
+        <item name="cardBackgroundColor">@color/ice_surface</item>
+        <item name="strokeColor">@color/ice_stroke</item>
+        <item name="strokeWidth">@dimen/hairline</item>
+    </style>
+
+    <style name="Widget.App.Card.Stat" parent="Widget.App.Card.Soft">
+        <item name="cardCornerRadius">@dimen/radius_m</item>
+        <item name="cardElevation">@dimen/elevation_s</item>
+    </style>
+
+    <style name="Widget.App.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textSize">@dimen/text_chip</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="chipMinHeight">@dimen/chip_height</item>
+        <item name="chipCornerRadius">@dimen/chip_radius</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipIconVisible">false</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipBackgroundColor">@color/selector_chip_background</item>
+        <item name="android:textColor">@color/selector_chip_text</item>
+        <item name="rippleColor">@color/ripple_primary</item>
+    </style>
+
+    <style name="Widget.App.TextField" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/ice_secondary</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_s</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_s</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_s</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_s</item>
+        <item name="hintTextColor">@color/ice_text_muted</item>
+        <item name="android:textColorHint">@color/ice_text_faint</item>
+    </style>
+
+    <style name="Widget.App.Slider" parent="Widget.Material3.Slider">
+        <item name="thumbColor">@color/ice_accent</item>
+        <item name="trackColorActive">@color/ice_primary</item>
+        <item name="trackColorInactive">@color/ice_background_deep</item>
+        <item name="haloColor">@color/ripple_accent</item>
+        <item name="labelBehavior">gone</item>
+    </style>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/spot_card"
+    style="@style/Widget.App.Card.Soft"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spot_card_height"
+    android:layout_marginBottom="@dimen/space_s"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/radius_s">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_m"
+        android:paddingEnd="@dimen/space_m">
+
+        <ImageView
+            android:id="@+id/img_spot"
+            android:layout_width="@dimen/spot_sprite_size"
+            android:layout_height="@dimen/spot_sprite_size"
+            android:contentDescription="@string/spot_art_desc"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_tent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_m"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_spot_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/value_none"
+                android:textAppearance="@style/TextAppearance.IceLake.Body"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_spot_meta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/value_none"
+                android:textAppearance="@style/TextAppearance.IceLake.Meta" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_spot_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_badge_best"
+            android:paddingStart="@dimen/space_s"
+            android:paddingTop="@dimen/space_xs"
+            android:paddingEnd="@dimen/space_s"
+            android:paddingBottom="@dimen/space_xs"
+            android:text="@string/spot_favourite"
+            android:textColor="@color/ice_accent"
+            android:textSize="@dimen/text_meta"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
